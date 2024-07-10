@@ -1,0 +1,516 @@
+:root{
+    --pink-main:#d43683;
+    --secondary:#b00808;
+    --beaut:#a2008f;
+    --more_used:#feef;
+    --font_family_home:font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;   
+    text-transform: capitalize;
+    list-style: none;
+    transition: all 0.5s;
+}
+body{
+    background-color: #eee;
+}
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+}
+header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;right: 0;left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    background-color: #feef;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0,0.2);
+    border-radius: 0.2rem;
+}
+header .nav_bar a{
+    font-size: 2rem;
+    color: rgb(117, 114, 114);
+    padding: 0 1.5rem;
+}
+header .nav_bar a:hover{
+    color: var(--pink-main);
+}
+header .logo{
+    font-size: 3rem;
+    color: var(--pink-main);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header .logo span{
+    color: var(--secondary);
+}
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color: var(--secondary);
+}
+header #menu_click{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3.2rem;
+    color: #333;
+    padding: .5rem 1.2rem;
+    border-radius: .5rem;
+    border: 1px solid #333;
+    cursor: pointer;
+    display: none;
+}
+/* end header */
+
+/* home section */
+
+.home{
+    display: flex;
+    align-items: center;
+    padding-top: 7rem;
+    min-height: 100vh;
+    background: url(https://theswanatlavenham.co.uk/media/10656/pink-roses-on-pink-background-min.jpeg?width=1920&height=1080&quality=80&rnd=133475646090800000&format=webp&refresh) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+    padding-left: 5rem;
+}
+
+.home .content h2{
+    font-size: 8rem;
+    padding: 3rem 0;
+    color: var(--pink-main);
+    text-shadow: 21px 2px 30px rgba(0, 0, 0, 0.442);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home .content h3{
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+    color: var(--beaut);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home .content p{
+    font-size: 2.3rem;
+    padding-bottom: 2.5rem;
+    line-height: 2.8rem;
+    word-spacing: 2px;
+    color: #2b2b44;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home .content a{
+    font-size: 2.2rem;
+    padding: 1.2rem 3rem;
+    background-color: #000000;
+    border-radius: 3rem;
+    color: var(--pink-main);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home .content a:hover{
+    background-color: var(--pink-main);
+    color: #000;
+}
+
+/* About */
+
+h2.about_word{
+    text-align: center;
+    background-color: var(--more_used);
+    margin: 2rem auto;
+    font-size: 4rem;
+    width: 80%;
+}
+h2.about_word span{
+    color: var(--pink-main);
+}
+section.About{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    grid-area: 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem 4rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+section.About .video,section.About .text_about{
+    flex: 1 1 370px;
+    position: relative;
+}
+
+section.About .video video,section.About .text_about{
+    width: 100%;
+    border: 1rem solid #fff;
+    border-radius: 4rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.266);
+}
+
+section.About .text_about h3{
+    font-size: 4rem;
+    color: var( --beaut);
+    padding: 1rem 0;
+}
+
+section.About .text_about p{
+    font-size: 1.9rem;
+    padding: .5rem 0;
+    color: #003943;
+
+}
+
+section.About .text_about a{
+    display: inline-block;
+    font-size: 1.9rem;
+    margin: 0.5rem 0.5rem;
+    padding: 1.5rem 2rem;
+    background-color: var(--pink-main);
+    border-radius: 15px;
+    color: #9dd8e2;
+    font-weight: bolder;
+}
+
+section.About .text_about a:hover{
+    background-color: #2b1212;
+    color: var(--more_used);
+}
+/* ADS section */
+.ads{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+.ads .icon{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+    gap: 2rem;
+    padding: 2rem ;
+    margin:0 15px ;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+} 
+.ads .icon:hover{
+    transform: scale(1.05);
+    cursor: grabbing;
+}
+.ads .icon .info h3{
+    font-size: 1.6rem;
+    padding: 1.2rem 0;
+    color: #000000;
+}
+.ads .icon .info span{
+    font-size: 1rem;
+    padding: 1.3rem 0;
+    color: gray;
+}
+
+/* products */
+.container_product{
+    background-color: #fff;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 5px 10px 50px rgba(255, 227, 47, 0.329);
+}
+.container_product .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+.product{
+    padding: 15px 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+    transition: all 2s;
+}
+
+.product:hover{
+    transform: rotate(25deg);
+
+}
+
+
+.product span{
+    position: absolute;
+    z-index: 100;
+    font-size: 12px;
+    color: red;
+    text-decoration: underline;
+}
+.product h3{
+    font-size: 2rem;
+    color: #0000008e;
+}
+
+.product p{
+    color: var(--pink-main);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.product p sub{
+    color: #000;
+}
+
+.product .share {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d43683;
+    border-radius: 10px;
+    opacity: 0;
+    
+}
+
+.product:hover .share {
+    opacity: 1; 
+    transition: all 2s;
+    
+}
+
+.product img:hover{
+    transform: scale(1.115);
+    transition: all 1s;
+}
+.container_product .share p{
+    color: #fff;
+    font-size: 1.6rem;
+}
+/* end product */
+
+/* start review */
+.review .rev .info_rev img{
+    border-radius: 100%;
+    width: 50px;
+
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 25px;
+    width: 80%;
+    margin: 4rem auto;
+}
+.review .rev{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 20px rgba(255, 0, 0, 0.326);
+    transition: all 1.5s;
+}
+.review .rev:hover{
+    transform: scale(1.1);
+}
+.review .rev i{
+    color: #ff0000;
+    margin: 10px 0;
+}
+.review .rev p{
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #044e5b;
+    margin: 10px 0;
+}
+.review .rev span{
+    color: #b00808;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+/* end review */
+/* start contact */
+.contact{
+    padding: 20px 25px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    border-radius: 10px;
+}
+.contact .pic img{
+    height: 500px;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 2px 5px 20px black;
+    
+}
+.contact .message{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 5px 20px rgb(0, 0, 0);
+    background-color: #963389;
+    border-radius: 50px;
+    padding: 30px;
+    width: 80%;
+}
+.contact .message label{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f3f3f3;
+}
+.contact .message input{
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    background-color: #9dd8e2;
+}
+.contact .message textarea{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #9dd8e2;
+}
+.contact .message a{
+    display: block;
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 25px;
+    color: var(--pink-main);
+    font-weight: 900;
+    font-size: 1.5rem;
+    transition: all 1.5s ease;
+}
+.contact .message a:hover{
+    background-color: var(--pink-main);
+    color: #000;
+}
+/* end contact */
+/* footer */
+footer{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 25px;
+    background-color: var(--more_used);
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+}
+footer .col a{
+    display: inline-block;
+    color: rgb(135, 40, 128);
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+footer .col a:hover{
+    text-decoration: underline;
+    color: #9dd8e2;
+}
+footer .col h3{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom:15px;
+    
+}
+.designer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0 20px 0;
+    font-size: 1.6rem;
+}
+.designer span{
+    color: #0188ff;
+}
+/* media query */
+@media (max-width:980px) {
+    html{
+        font-size: 65%;
+    }
+    header{
+        padding: 1.5rem 2rem;
+    }
+    .review{
+        flex-wrap: wrap;
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:788px) {
+    html{
+        font-size: 50%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .nav_bar{
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background-color: #eee;
+        border-top: 2px solid #6a1212;
+        border-radius: 0.5rem;
+        display: none;
+    }
+    header .nav_bar a{
+        display: block;
+        padding: 3rem 2rem;
+        border-bottom: 2px solid rgba(104, 81, 104, 0.53);
+    }
+    header .nav_bar a:hover{
+        padding-left: 5rem;
+        background-color: #333;
+    }
+    #menu_click:checked ~ .nav_bar{
+        display: block;
+    }
+
+}
+@media (max-width:580px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
